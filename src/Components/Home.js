@@ -26,7 +26,7 @@ const Home = () => {
         
         const isMobile = window.innerWidth <= 768; // Check if it's a mobile device
         const torusSize = isMobile ? 5 : 10; // Smaller size for mobile
-        const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
+        const geometry = new THREE.TorusGeometry(7, 3, 30, 70);
         const material = new THREE.MeshStandardMaterial({ color: 0xFF6347, wireframe: false });
         const torus = new THREE.Mesh(geometry, material);
         scene.add(torus);

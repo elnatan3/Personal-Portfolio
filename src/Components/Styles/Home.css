@@ -45,7 +45,7 @@
 }
 
 .home-image {
-    margin-top: 50px; /* Reduce top margin */
+    margin-top: 20px; /* Reduce top margin */
     max-width: 300px; /* Smaller image size for mobile */
     width: 80%; /* Responsive width */
     border-radius: 50%;
@@ -85,11 +85,14 @@
 
 @media (max-width: 768px) {
     .threejs-scene {
-        top: 10px; /* Adjust top position for mobile */
-        width: 80%; /* Increase width for better visibility */
+        top: 200px; /* Adjust top position for mobile */
+        width: 100%; /* Increase width for better visibility */
         height: 50%; /* Adjust height */
         left: 50%;
         transform: translateX(-50%); /* Keep centered */
     }
+    
 }
+
+
 

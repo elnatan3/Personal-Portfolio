@@ -83,48 +83,7 @@
     background-color: #6dd5ed;
   }
 
-  /* ...existing styles... */
 
-@media screen and (max-width: 768px) {
-    .about-me-content {
-        /* Adjustments for tablets */
-        max-width: 90%;
-        padding: 15px;
-        margin: 10px;
-    }
-
-    .about-me h2 {
-        font-size: 1.6rem;
-    }
-
-    .about-me p {
-        font-size: 0.8rem;
-    }
-
-    /* Adjust circle sizes and positions */
-    /* ...existing circle styles... */
-}
-
-@media screen and (max-width: 480px) {
-    .about-me-content {
-        /* Adjustments for mobile phones */
-        max-width: 100%;
-        padding: 10px;
-    }
-
-    .about-me h2 {
-        font-size: 1.4rem;
-    }
-
-    .about-me p {
-        font-size: 0.7rem;
-    }
-
-    /* Hide or adjust circles for smaller screens */
-    .circle-small, .circle-medium, .circle-large {
-        display: none; /* Hide circles for very small screens */
-    }
-}
 
 /* ...existing styles... */
 
@@ -133,6 +92,7 @@
       /* Adjust grid layout for tablets */
       grid-template-columns: 1fr;
       width: 90%;
+      margin-bottom: 30px;
     }
   
     .project-info h3 {
