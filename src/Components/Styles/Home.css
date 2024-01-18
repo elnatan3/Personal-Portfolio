@@ -83,4 +83,13 @@
     }
 }
 
+@media (max-width: 768px) {
+    .threejs-scene {
+        top: 10px; /* Adjust top position for mobile */
+        width: 80%; /* Increase width for better visibility */
+        height: 50%; /* Adjust height */
+        left: 50%;
+        transform: translateX(-50%); /* Keep centered */
+    }
+}
 
