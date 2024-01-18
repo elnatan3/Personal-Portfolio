@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+  }
+  
+  
+
+.research-section {
+    background: radial-gradient(circle at top right, #6e8efb, #bea7da, #f0e6f6);
+    padding: 50px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .research-section:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+  }
+  
+  .research-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 20px;
+    align-items: start;
+    padding: 20px;
+    margin: 0 10px;
+  }
+  
+  .research-item {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .research-item:before {
+    content: '';
+    position: absolute;
+    top: -2px; right: -2px; bottom: -2px; left: -2px;
+    background: linear-gradient(45deg, #6e8efb, #bea7da, #f0e6f6);
+    z-index: -1;
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+  }
+  
+  .research-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .research-item:hover:before {
+    opacity: 1;
+  }
+  
+  .research-item img {
+    width: 70%;
+    height: 50%;
+    object-fit: cover;
+  }
+  
+  .research-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 15px;
+  }
+  
+  .research-item p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    padding: 0 15px 15px;
+  }
+  
+  .research-item a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 15px 15px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .research-item a:hover {
+    background-color: #0056b3;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Adding a CSS animation for a visually dynamic effect */
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  .research-item:nth-child(odd) {
+    animation: float 4s ease-in-out infinite;
+  }
+  
+  .research-item:nth-child(even) {
+    animation: float 4s ease-in-out infinite reverse;
+  }
+  
+  
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    h2 {
+        font-size: 2.5rem; /* Smaller font for header on tablets */
+    }
+
+    .research-item h3 {
+        font-size: 1.2rem; /* Smaller font for titles on tablets */
+    }
+
+    .research-item p {
+        font-size: 0.9rem; /* Smaller font for paragraphs on tablets */
+    }
+
+    .research-item a {
+        padding: 8px 15px; /* Smaller padding for links on tablets */
+    }
+
+    /* Adjust grid for better layout on tablets */
+    .research-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        margin: 0 20px;
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h2 {
+        font-size: 2rem; /* Further reduce font size for header on mobile */
+    }
+
+    .research-item h3 {
+        font-size: 1rem; /* Further reduce font size for titles on mobile */
+    }
+
+    .research-item p {
+        font-size: 0.8rem; /* Further reduce font size for paragraphs on mobile */
+    }
+
+    .research-item a {
+        padding: 6px 10px; /* Smaller padding for links on mobile */
+        font-size: 0.9rem; /* Smaller font size for links on mobile */
+    }
+
+    /* Adjust grid for better layout on mobile */
+    .research-grid {
+        grid-template-columns: 1fr;
+        margin: 0px;
+    }
+}
+
+/* Optional: Animation adjustments for mobile */
+@media screen and (max-width: 480px) {
+    .research-item:nth-child(odd), .research-item:nth-child(even) {
+        animation: none; /* Disable floating animation on mobile */
+    }
+}

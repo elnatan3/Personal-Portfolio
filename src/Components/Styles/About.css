@@ -1,0 +1,139 @@
+.about-me {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #6dd5ed, #2193b0);
+    color: white;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+.about-me-content {
+    max-width: 600px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    margin: 20px;
+    transform: scale(0.9); /* Initial state for GSAP */
+    opacity: 0; /* Initial state for GSAP */
+}
+
+.about-me h2 {
+    font-size: 2rem; /* Adjusted base size */
+    margin-bottom: 1rem;
+}
+
+.about-me p {
+    font-size: 0.9rem; /* Adjusted base size */
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Decorative Background Elements */
+.background-circle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    animation: float 10s ease-in-out infinite;
+}
+
+.circle-small {
+    width: 200px;
+    height: 200px;
+    top: 10%;
+    left: 5%;
+}
+
+.circle-medium {
+    width: 400px;
+    height: 400px;
+    top: 20%;
+    right: 50%;
+}
+
+.circle-large {
+    width: 600px;
+    height: 600px;
+    bottom: -25%;
+    right: 15%;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .about-me-content {
+        max-width: 90%;
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .about-me h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-me p {
+        font-size: 0.8rem;
+    }
+
+    .circle-small {
+        width: 150px;
+        height: 150px;
+        top: 15%;
+        left: 10%;
+    }
+
+    .circle-medium {
+        width: 300px;
+        height: 300px;
+        top: 25%;
+        right: 55%;
+    }
+
+    .circle-large {
+        width: 450px;
+        height: 450px;
+        bottom: -30%;
+        right: 20%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-me-content {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .about-me h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-me p {
+        font-size: 0.7rem;
+    }
+
+    .circle-small {
+        display: none;
+    }
+
+    .circle-medium {
+        width: 200px;
+        height: 200px;
+        top: 30%;
+        right: 60%;
+    }
+
+    .circle-large {
+        width: 300px;
+        height: 300px;
+        bottom: -35%;
+        right: 25%;
+    }
+}

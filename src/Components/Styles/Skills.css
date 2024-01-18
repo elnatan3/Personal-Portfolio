@@ -1,0 +1,88 @@
+/* Skills Section */
+.skills-section {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(135deg, #385bab 0%, #0d1676 100%);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.skills-section::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: radial-gradient(circle, rgba(255,255,255,0.2) 1%, transparent 70%);
+    z-index: 1;
+    animation: pulsate 10s ease-out infinite;
+    background-size: 200% 200%;
+}
+
+@keyframes pulsate {
+    0% { transform: scale(0.5); }
+    50% { transform: scale(1.5); }
+    100% { transform: scale(0.5); }
+}
+
+/* Certifications Container */
+.certifications-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Certification Card */
+.certification-card {
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.5s ease;
+    background: white;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.certification-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Image in Certification Card */
+.certification-image {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.certification-card:hover .certification-image {
+    transform: scale(1.1);
+}
+
+/* Responsive adjustments for Tablets */
+@media screen and (max-width: 768px) {
+    .certification-card {
+        width: 300px; /* Adjust width for smaller tablets */
+        height: 250px; /* Adjust height for smaller tablets */
+    }
+}
+
+/* Responsive adjustments for Mobile Phones */
+@media screen and (max-width: 480px) {
+    .certifications-container {
+        justify-content: space-around; /* Adjust layout for mobile */
+    }
+
+    .certification-card {
+        width: 100%; /* Full width cards on smaller screens */
+        max-width: 320px; /* Limit maximum width for very large mobile screens */
+        height: auto; /* Height adjusts to content */
+    }
+}

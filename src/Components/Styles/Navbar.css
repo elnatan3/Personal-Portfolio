@@ -1,0 +1,90 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #5956c4, #3b1881);
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+    border-bottom: 3px solid #fff;
+    transition: transform 0.3s ease;
+  }
+  
+  .nav-item {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+    background: rgba(255, 255, 255, 0.1);
+    transform: scale(1);
+  }
+  
+  .nav-item:hover, .nav-item.active {
+    color: #FFC837;
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(255, 200, 55, 0.4);
+    cursor: pointer;
+  }
+  
+  .hamburger-menu {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    z-index: 1100;
+  }
+
+  .hamburger-menu.open {
+  /* Define what should happen when the menu is open.
+     This might be something like changing the appearance of the menu button,
+     or it could be used to show additional menu options. */
+  /* Example: change background color when open */
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.hamburger-menu div {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+}
+  
+  
+  
+  @media (max-width: 768px) {
+    .hamburger-menu {
+      display: flex;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      transform: translateX(-100%);
+      padding-top: 40px;
+    }
+  
+    .navbar.active {
+      transform: translateX(0);
+    }
+  
+    .nav-item {
+      font-size: 1.5rem;
+      margin: 20px 0;
+      display: block;
+    }
+  
+    .navbar:not(.active) .nav-item {
+      display: none;
+    }
+  }
