@@ -20,6 +20,7 @@
     margin: 20px;
     transform: scale(0.9); /* Initial state for GSAP */
     opacity: 0; /* Initial state for GSAP */
+    align-items: center;
 }
 
 .about-me h2 {
@@ -135,5 +136,60 @@
         height: 300px;
         bottom: -35%;
         right: 25%;
+    }
+}
+
+.cv-section {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px; /* Adjust as needed */
+}
+
+.download-cv {
+    display: inline-block;
+    background: #2193b0;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    font-size: 1.2rem;
+    margin-right: 30px;
+
+    
+}
+
+.download-cv:hover {
+    background: #6dd5ed;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.cv {
+    font-weight: bold;
+    
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .cv-section {
+        margin-top: 20px;
+    }
+
+    .download-cv {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cv-section {
+        margin-top: 15px;
+    }
+
+    .download-cv {
+        padding: 10px 20px;
+        font-size: 0.9rem;
     }
 }
