@@ -8,20 +8,36 @@ import Skills from './Components/Skills';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
 import Navbar from './Components/Navbar';
+import { useState, useEffect } from 'react';
+import Loading from './Components/Loading'; // Import the Loading component
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 3000); // 3 seconds
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="App" id="top">
-      <Navbar />
-      <Home />
-      <AboutMe />
-      <Projects />
-      <Research /> 
-      <Skills />
-      <Contact />
-      <Footer />
+      {loading ? (
+        <Loading />
+      ) : (
+        <>
+          <Navbar />
+          <Home />
+          <AboutMe />
+          <Projects />
+          <Research /> 
+          <Skills />
+          <Contact />
+          <Footer />
+        </>
+      )}
     </div>
   );
 }
 
 export default App;
+
