@@ -64,7 +64,7 @@ const Projects = () => {
                 {projectsData.map((project, index) => (
                     <div className="project-card" key={index}>
                         <div className="project-image">
-                            <img src={project.imageUrl} alt={project.title} />
+                            <img src={project.imageUrl} loading='lazy' alt={project.title} />
                         </div>
                         <div className="project-info">
                             <h3>{project.title}</h3>
