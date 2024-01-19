@@ -1,7 +1,7 @@
 import React from 'react';
 import './Styles/Skills.css';
-import cert1 from './Images/ebay.jpg'; // Adjust the path as necessary
-import cert2 from './Images/codepath.jpg'; // Adjust the path as necessary
+import cert1 from './Images/ebay.jpg'; 
+import cert2 from './Images/codepath.jpg'; 
 import cert3 from './Images/learning_1.jpg';
 import cert4 from './Images/learning_4.jpg';
 import cert5 from './Images/google_1.jpg';
@@ -25,7 +25,7 @@ const Skills = () => {
     { imgSrc: cert9},
     { imgSrc: cert10},
     { imgSrc: cert11},
-    // Add more certifications as needed
+    
   ];
 
   return (
@@ -35,7 +35,6 @@ const Skills = () => {
         {certifications.map((cert, index) => (
           <div key={index} className="certification-card">
             <img src={cert.imgSrc} alt={cert.title} className="certification-image"/>
-            <p className="certification-title">{cert.title}</p>
           </div>
         ))}
       </div>

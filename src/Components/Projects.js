@@ -1,10 +1,10 @@
 import React from 'react';
-import './Styles/Project.css'; // Ensure the correct path to your Projects.css file
-import event from './Images/event.gif'; // Adjust the path as necessary
-import musipedia from './Images/MusipediaWeb.gif'; // Adjust the path as necessary
-import pointillist from './Images/Pointillist.gif'; // Adjust the path as necessary
-import instanews from './Images/news.gif'; // Adjust the path as necessary
-import emoji from './Images/emoji.gif'; // Adjust the path as necessary
+import './Styles/Project.css'; 
+import event from './Images/event.gif'; 
+import musipedia from './Images/MusipediaWeb.gif'; 
+import pointillist from './Images/Pointillist.gif'; 
+import instanews from './Images/news.gif'; 
+import emoji from './Images/emoji.gif'; 
 
 const projectsData = [
     {
@@ -53,7 +53,7 @@ const projectsData = [
     
 
     
-    // Add more projects as needed
+  
 ];
 
 const Projects = () => {

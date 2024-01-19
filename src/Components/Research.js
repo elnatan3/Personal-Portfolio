@@ -1,10 +1,10 @@
 import React from 'react';
-import './Styles/Research.css'; // Import your Research.css file
+import './Styles/Research.css'; 
 
 const Research = () => {
   return (
     <div className="research-section" id="research">
-      <h2>My Research Work</h2> {/* Updated header for a more descriptive title */}
+      <h2>My Research Work</h2> 
       <div className="research-grid">
       <div className="research-item">
           <h3>The Ethics and Effects of Employee Monitoring:

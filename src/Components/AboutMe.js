@@ -9,10 +9,10 @@ const AboutMe = () => {
     const circleLargeRef = useRef(null);
 
     useEffect(() => {
-        // Animate the about me content
+    
         gsap.to(aboutRef.current, { duration: 1, scale: 1, opacity: 1, ease: "power3.out" });
 
-        // Position and animate the circles
+    
         const circles = [circleSmallRef, circleMediumRef, circleLargeRef];
         circles.forEach((circle, index) => {
             gsap.set(circle.current, { xPercent: -100 + index * 10 });

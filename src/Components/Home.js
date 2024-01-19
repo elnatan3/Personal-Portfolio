@@ -9,7 +9,7 @@ const Home = () => {
     let renderer;
 
     useEffect(() => {
-        // Complex GSAP Animations
+        
         gsap.fromTo(".home-image", 
                     { scale: 0, opacity: 0, rotation: 720 }, 
                     { duration: 1.5, scale: 1, opacity: 1, rotation: 0, ease: "elastic.out(1, 0.3)", delay: 0.5 });

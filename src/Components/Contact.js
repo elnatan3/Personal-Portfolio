@@ -1,6 +1,5 @@
 import React from 'react';
-import './Styles/Contact.css'; // Make sure this CSS file exists in your project
-
+import './Styles/Contact.css'; 
 const Contacts = () => {
   return (
     <div className="contacts-section" id="contact">
