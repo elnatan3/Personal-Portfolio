@@ -9,7 +9,7 @@ import Contact from './Components/Contact';
 import Footer from './Components/Footer';
 import Navbar from './Components/Navbar';
 import { useState, useEffect } from 'react';
-import Loading from './Components/Loading'; // Import the Loading component
+import Loading from './Components/Loading'; 
 
 function App() {
   const [loading, setLoading] = useState(true);
