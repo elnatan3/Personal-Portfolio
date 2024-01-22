@@ -29,48 +29,32 @@
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
-    
+    flex-wrap: wrap; /* Wraps items for better responsiveness */
   }
   
   .contact-item {
     margin: 0 15px;
     text-align: center;
-    transition: transform 0.3s ease;
   }
   
   .contact-item a {
     text-decoration: none;
     color: #6dd5ed;
     position: relative;
-  }
-  
-  .contact-item:hover {
-    transform: translateY(-5px);
+    display: inline-block; /* Aligns icon with text */
+    padding: 10px; /* Adds space around the link for better touch interaction */
   }
   
   .icon {
     width: 50px;
     height: auto;
     margin-bottom: 5px;
-    transition: transform 0.5s ease;
-  }
-  
-  .contact-item:hover .icon {
-    transform: rotateY(360deg);
   }
   
   .footer-copy {
     font-size: 0.9rem;
     opacity: 0.8;
-  }
-  
-  @keyframes animate-background {
-    0% {
-      left: -100%;
-    }
-    100% {
-      left: 100%;
-    }
+    margin-top: 20px; /* Adds space before the copyright text */
   }
   
   @keyframes shimmer {
@@ -80,7 +64,7 @@
   
   @media (max-width: 768px) {
     .contact-items {
-      flex-direction: column;
+      flex-direction: row;
     }
   
     .contact-item {
