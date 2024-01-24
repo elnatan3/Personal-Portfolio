@@ -1,4 +1,4 @@
 I created my personal portfolio using advanced technology.
 Here is how it looks:
 
-![Home Page](./pp.png)
+![Home Page](./home_page.png)
