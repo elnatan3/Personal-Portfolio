@@ -1,6 +1,6 @@
 import React from 'react';
 import './Styles/Project.css'; 
-import event from './Images/event.gif'; 
+import event from './Images/ultimateEvent.gif'; 
 import musipedia from './Images/MusipediaWeb.gif'; 
 import pointillist from './Images/Pointillist.gif'; 
 import instanews from './Images/news.gif'; 
@@ -9,8 +9,8 @@ import emoji from './Images/emoji.gif';
 const projectsData = [
     {
         title: "Event App",
-        description: "Ultimate Event simplifies organizing and attending events with a user-friendly platform. It features easy event registration, community interaction, and event tracking. The platform enhances community engagement and supports various event types.",
-        language: "Python, Flask, HTML, CSS, JavaScript, SQL",
+        description: "Ultimate Event is an efficient platform for organizing and attending events, featuring user-friendly registration, domain-specific visibility, and secure email verification. Participants can easily engage with events, manage their attendance, and contact organizers. For event organizers, it offers comprehensive tools to create, manage, and track events, including the ability to communicate with attendees. This platform enhances community interaction and ensures a relevant audience for every event.",
+        language: "Python, Firebase, Flask, HTML, CSS, JavaScript, SQL",
         imageUrl: event,
         liveUrl: "https://ultimate-event.replit.app/",
         githubUrl: "https://github.com/elnatan3/Ultimate_Event"
