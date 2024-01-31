@@ -59,7 +59,7 @@ const projectsData = [
 const Projects = () => {
     return (
         <div className="projects-section" id="projects">
-            <h2>My Projects</h2>
+            <h2>My Latest Projects</h2>
             <div className="projects-container">
                 {projectsData.map((project, index) => (
                     <div className="project-card" key={index}>
