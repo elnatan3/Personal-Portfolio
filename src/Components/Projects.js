@@ -13,7 +13,7 @@ const projectsData = [
         language: "Python, Firebase, Flask, HTML, CSS, JavaScript, SQL",
         imageUrl: event,
         liveUrl: "https://the-ultimate-event.replit.app/",
-        githubUrl: "https://github.com/elnatan3/Ultimate_Event"
+        githubUrl: "https://github.com/elnatan3/New_Ultimate_Event"
     },
     {
         title: "Instanews",
