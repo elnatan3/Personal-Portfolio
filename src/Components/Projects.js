@@ -12,7 +12,7 @@ const projectsData = [
         description: "Ultimate Event is an efficient platform for organizing and attending events, featuring user-friendly registration, domain-specific visibility, and secure email verification. Participants can easily engage with events, manage their attendance, and contact organizers. For event organizers, it offers comprehensive tools to create, manage, and track events, including the ability to communicate with attendees. This platform enhances community interaction and ensures a relevant audience for every event.",
         language: "Python, Firebase, Flask, HTML, CSS, JavaScript, SQL",
         imageUrl: event,
-        liveUrl: "https://ultimate-event.replit.app/",
+        liveUrl: "https://the-ultimate-event.replit.app/",
         githubUrl: "https://github.com/elnatan3/Ultimate_Event"
     },
     {
