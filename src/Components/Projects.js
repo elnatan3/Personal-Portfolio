@@ -5,6 +5,8 @@ import musipedia from './Images/MusipediaWeb.gif';
 import pointillist from './Images/Pointillist.gif'; 
 import instanews from './Images/news.gif'; 
 import emoji from './Images/emoji.gif'; 
+import threeDBoard from './Images/3DBoardCreator.gif.gif'; 
+
 
 const projectsData = [
     {
@@ -29,6 +31,7 @@ const projectsData = [
         description: "This app converts 'gif' images into pointillist art, displaying them in a window. It achieves this by transforming pixels into colored points and saving the artwork in '.art_files'. It's a valuable tool for artists and designers exploring new visual styles or for educational purposes to teach pointillism.",
         language: "Python, Tikinter, OS",
         imageUrl: pointillist,
+        liveUrl: "https://github.com/elnatan3/Pointillist_Creator_and_Viewer",
         githubUrl: "https://github.com/elnatan3/Pointillist_Creator_and_Viewer"
 
     },
@@ -42,6 +45,15 @@ const projectsData = [
 
     },
     {
+        title: "3D board Creator",
+        description: "This project is a Java-based application designed for creating 3D game boards and terrains. The app was created with my team through agile methodology and GitHub integration. The app is user-friendly and has features that allows for easy customization and design of game boards. It also offers a 3D preview feature which is compatible with 3D printers, allowing users to bring their digital creations into the physical world.",
+        language: "Java, JavaFx, Scenebuilder, Unit Testing, and Software Development",
+        imageUrl: threeDBoard,
+        liveUrl: "https://github.com/AugustanaCSC305Fall22/IbisRepo",
+        githubUrl: "https://github.com/AugustanaCSC305Fall22/IbisRepo"
+
+    },
+    {
         title: "Emojiverse",
         description: "EmojiVerse is a React app that translates sentences into expressive emojis, offering contextually relevant suggestions. It also provides emoji meanings and enriches messaging experiences. Elevate your conversations with EmojiVerse! Currently working to advance the site by using APIs.",
         language: "React",
@@ -50,6 +62,7 @@ const projectsData = [
         githubUrl: "https://github.com/elnatan3/EmojiVerse"
 
     },
+    
     
 
     
