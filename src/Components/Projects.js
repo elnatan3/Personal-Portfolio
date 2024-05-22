@@ -6,9 +6,18 @@ import pointillist from './Images/Pointillist.gif';
 import instanews from './Images/news.gif'; 
 import emoji from './Images/emoji.gif'; 
 import threeDBoard from './Images/3DBoardCreator.gif.gif'; 
+import roommixer from './Images/roommixer.gif';
 
 
 const projectsData = [
+    {
+        title: "Roommate Matching App",
+        description: "Roommixer is a revolutionary roommate matching app with user-friendly features. Admins can tailor questionnaires, target specific users, manage issues, upload agreements, and track user matches effortlessly. Users enjoy a seamless experience, answering questions, editing their profile, filtering matches, and connecting securely with in-app messaging. Other features include listing houses, accessing agreements, and sharing feedback",
+        language: "React, Next.js, Material-UI, Firebase(firestore database, authentication, storage), Render(hosting)",
+        imageUrl: roommixer,
+        liveUrl: "https://roommixer.com",
+        githubUrl: "https://github.com/elnatan3/magpie"
+    },
     {
         title: "Event App",
         description: "Ultimate Event is an efficient platform for organizing and attending events, featuring user-friendly registration, domain-specific visibility, and secure email verification. Participants can easily engage with events, manage their attendance, and contact organizers. For event organizers, it offers comprehensive tools to create, manage, and track events, including the ability to communicate with attendees. This platform enhances community interaction and ensures a relevant audience for every event.",
