@@ -16,7 +16,7 @@ const projectsData = [
         language: "React, Next.js, Material-UI, Firebase(firestore database, authentication, storage), Render(hosting)",
         imageUrl: roommixer,
         liveUrl: "https://roommixer.com",
-        githubUrl: "https://github.com/elnatan3/magpie"
+        githubUrl: "https://github.com/AugustanaCSC490Spring2024/Magpie"
     },
     {
         title: "Event App",
