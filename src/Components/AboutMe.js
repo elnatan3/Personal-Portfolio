@@ -33,7 +33,7 @@ const AboutMe = () => {
                     I'm a 22-year-old college student, passionate about leveraging my deep-seated interest in computers and data analytics to solve real-world challenges. With a knack for coding in various languages and a meticulous attention to detail, I excel in dissecting complex problems and delivering precise, data-driven solutions. Thriving in leadership and collaborative settings, I am constantly seeking out new learning opportunities in the ever-evolving tech landscape. My dedication to continuous personal and professional growth makes me a valuable asset in any tech-centric role, where creativity, strategic thinking, and adaptability are paramount.
                 </p>
                 <div className="cv-section">
-                <a href="https://drive.google.com/file/d/1QnCmCe0x5ZwlX2vjGMoWhXZ_jFBJSUqa/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="download-cv">
+                <a href="https://drive.google.com/file/d/1AfCtVybvuHLyDtyWYf6c8dm5SZdJLGtU/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="download-cv">
                     <div className="cv">Download CV</div>
                 </a>
             </div>
