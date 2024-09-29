@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Styles/Project.css'; 
 import event from './Images/ultimateEvent.gif'; 
 import musipedia from './Images/MusipediaWeb.gif'; 
@@ -79,12 +79,39 @@ const projectsData = [
 ];
 
 const Projects = () => {
+    const projectRefs = useRef([]);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.2 });
+
+
+        projectRefs.current.forEach((ref) => {
+            if (ref) observer.observe(ref);
+        });
+
+        return () => {
+            projectRefs.current.forEach((ref) => {
+                if (ref) observer.unobserve(ref);
+            });
+        };
+    }, []);
+
     return (
         <div className="projects-section" id="projects">
             <h2>My Latest Projects</h2>
             <div className="projects-container">
                 {projectsData.map((project, index) => (
-                    <div className="project-card" key={index}>
+                    <div
+                        className="project-card"
+                        key={index}
+                        ref={(el) => projectRefs.current[index] = el}
+                    >
                         <div className="project-image">
                             <img src={project.imageUrl} alt={project.title} />
                         </div>
@@ -100,8 +127,8 @@ const Projects = () => {
                     </div>
                 ))}
             </div>
-
         </div>
     );
 };
+
 export default Projects;

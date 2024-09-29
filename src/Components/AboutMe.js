@@ -30,7 +30,7 @@ const AboutMe = () => {
             <div className="about-me-content" ref={aboutRef}>
                 <h2>About Me</h2>
                 <p>
-                    I'm a 22-year-old college student, passionate about leveraging my deep-seated interest in computers and data analytics to solve real-world challenges. With a knack for coding in various languages and a meticulous attention to detail, I excel in dissecting complex problems and delivering precise, data-driven solutions. Thriving in leadership and collaborative settings, I am constantly seeking out new learning opportunities in the ever-evolving tech landscape. My dedication to continuous personal and professional growth makes me a valuable asset in any tech-centric role, where creativity, strategic thinking, and adaptability are paramount.
+                I'm a 22-year-old college student with a strong passion for computers and data analytics. I love using my coding skills to solve real-world problems. I'm detail-oriented and enjoy breaking down complex issues to find clear, data-based solutions. Whether leading a team or working with others, I always look for new ways to learn and grow in the fast-changing tech world. My focus on improving both personally and professionally makes me a great fit for any tech role that values creativity, strategic thinking, and adaptability."
                 </p>
                 <div className="cv-section">
                 <a href="https://drive.google.com/file/d/1AfCtVybvuHLyDtyWYf6c8dm5SZdJLGtU/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="download-cv">

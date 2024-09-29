@@ -13,6 +13,8 @@
     gap: 30px;
   }
   
+
+
   .project-card {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -23,8 +25,17 @@
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
     transition: transform 0.5s ease, box-shadow 0.5s ease;
     position: relative;
+    opacity: 0;
+    transform: translateY(80px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
   }
   
+  .project-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
   .project-card:hover {
     transform: translateY(-15px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8);
@@ -116,6 +127,8 @@
   
     .project-card {
       width: 100%;
+      transform: translateY(50px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
     }
   
     .project-info h3 {
