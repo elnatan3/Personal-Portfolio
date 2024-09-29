@@ -1,5 +1,5 @@
 .projects-section {
-    background-color: #282c34;
+    background-color: #152441;
     color: white;
     padding: 50px;
     text-align: center;
@@ -18,8 +18,9 @@
   .project-card {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
     width: 80%;
-    background: linear-gradient(145deg, #333, #1a1c1d);
+    background: linear-gradient(145deg, #1b1e22, #042130);
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);

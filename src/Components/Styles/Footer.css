@@ -1,5 +1,5 @@
 .footer {
-    background-color: #0f1624;
+    background-color: #265f8e;
     color: #fff;
     text-align: center;
     padding: 40px 20px;
@@ -39,7 +39,7 @@
   
   .contact-item a {
     text-decoration: none;
-    color: #6dd5ed;
+    color: #010c0e;
     position: relative;
     display: inline-block; /* Aligns icon with text */
     padding: 10px; /* Adds space around the link for better touch interaction */
