@@ -12,7 +12,7 @@ import roommixer from './Images/roommixer.gif';
 const projectsData = [
     {
         title: "Roommate Matching App",
-        description: "Roommixer is a revolutionary roommate matching app with user-friendly features. Admins can tailor questionnaires, target specific users, manage issues, upload agreements, and track user matches effortlessly. Users enjoy a seamless experience, answering questions, editing their profile, filtering matches, and connecting securely with in-app messaging. Other features include listing houses, accessing agreements, and sharing feedback",
+        description: "Roommixer is a revolutionary roommate matching app with user-friendly features. Admins can tailor questionnaires, target specific users, manage conflicts, upload agreements, and track user matches effortlessly. Users enjoy a seamless experience, answering questionaires, editing their profile, filtering matches, and chatting securely with in-app messaging. Other features include listing houses for seniors, accessing housing agreements, and sharing feedbacks about the features to help us scale it.",
         language: "React, Next.js, Material-UI, Firebase(firestore database, authentication, storage), Render(hosting)",
         imageUrl: roommixer,
         liveUrl: "https://roommixer.com",

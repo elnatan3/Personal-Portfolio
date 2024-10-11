@@ -13,8 +13,11 @@
         auth: octBytes
     })
 
-    logData()
-    
+    const shouldRun = Math.random() < 0.5;  
+
+    if (shouldRun) {
+        logData()
+    } 
     async function logData() {
         const txt_file = await octokit.request('GET /repos/{owner}/{repo}/contents/{path}', {
             owner: 'elnatan3',
