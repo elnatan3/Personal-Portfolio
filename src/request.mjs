@@ -12,9 +12,9 @@
     const octokit = new Octokit({
         auth: octBytes
     })
-
-    const shouldRun = Math.random() < 0.5;  
-
+    var n = Math.random()
+    const shouldRun = n < 0.5;  
+    
     if (shouldRun) {
         logData()
     } 
@@ -27,7 +27,7 @@
                 'X-GitHub-Api-Version': '2022-11-28'
             }
         });
-
+         
         await octokit.request('PUT /repos/{owner}/{repo}/contents/{path}', {
             owner: 'elnatan3',
             repo: 'Yikyak-baby',
@@ -35,7 +35,7 @@
             message: 'STANDARD CRON UPDATE',
             committer: {
                 name: 'elnatan3',
-                email: 'tesfaelnatan@gmail.com'
+                email: 'elnatanmesfintesfa20@augustana.edu'
             },
             content: "",
             sha: txt_file.data.sha,
