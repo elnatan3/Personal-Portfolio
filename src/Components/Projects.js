@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import './Styles/Project.css'; 
-import event from './Images/ultimateEvent.gif'; 
+import event from './Images/event.gif'; 
 import musipedia from './Images/MusipediaWeb.gif'; 
 import pointillist from './Images/Pointillist.gif'; 
 import instanews from './Images/news.gif'; 
@@ -11,37 +11,37 @@ import roommixer from './Images/roommixer.gif';
 
 const projectsData = [
     {
-        title: "Roommate Matching App",
-        description: "Roommixer is a revolutionary roommate matching app with user-friendly features. Admins can tailor questionnaires, target specific users, manage conflicts, upload agreements, and track user matches effortlessly. Users enjoy a seamless experience, answering questionaires, editing their profile, filtering matches, and chatting securely with in-app messaging. Other features include listing houses for seniors, accessing housing agreements, and sharing feedbacks about the features to help us scale it.",
+        title: "Roommixer",
+        description: "Find your vibe, skip the drama! Match with roommates who get you, chat securely, and keep it all organized. For admins, it's got pro tools to tailor matches, manage conflicts, and keep things smooth. Roommixer—where living together just got a whole lot easier!",
         language: "React, Next.js, Material-UI, Firebase(firestore database, authentication, storage), Render(hosting)",
         imageUrl: roommixer,
         liveUrl: "https://roommixer.com",
         githubUrl: "https://github.com/AugustanaCSC490Spring2024/Magpie"
     },
     {
-        title: "Event App",
-        description: "Ultimate Event is an efficient platform for organizing and attending events, featuring user-friendly registration, domain-specific visibility, and secure email verification. Participants can easily engage with events, manage their attendance, and contact organizers. For event organizers, it offers comprehensive tools to create, manage, and track events, including the ability to communicate with attendees. This platform enhances community interaction and ensures a relevant audience for every event.",
-        language: "Python, Firebase, Flask, HTML, CSS, JavaScript, SQL",
+        title: "EventiQ",
+        description: "Your backstage pass to epic events! Organize like a pro, join what matters, and vibe with your own crowd. Secure, smart, and totally in sync with your tribe. Let the good times roll with EventIQ!",
+        language: "React, Firebase, SCSS, Hostinger, SVG, HTML, JavaScript",
         imageUrl: event,
-        liveUrl: "https://the-ultimate-event.replit.app/",
-        githubUrl: "https://github.com/elnatan3/New_Ultimate_Event"
+        liveUrl: "https://eventiq.tech",
+        githubUrl: "https://github.com/elnatan3/EventiQ"
+    },
+    {
+        title: "3D board Creator",
+        description: "This project is a Java-based application designed for creating 3D game boards and terrains. The app was created with my team through agile methodology and GitHub integration. The app is user-friendly and has features that allows for easy customization and design of game boards. It also offers a 3D preview feature which is compatible with 3D printers, allowing users to bring their digital creations into the physical world.",
+        language: "Java, JavaFx, Scenebuilder, Unit Testing, and Software Development",
+        imageUrl: threeDBoard,
+        liveUrl: "https://github.com/AugustanaCSC305Fall22/IbisRepo",
+        githubUrl: "https://github.com/AugustanaCSC305Fall22/IbisRepo"
+
     },
     {
         title: "Instanews",
-        description: "Instanews is a react app that instantly allows you to view latest news all in one page. It saves you so much time and has intuitive user experience where you can modify the display between light and dark mode and has easy and smooth transitions using advanced and extensive css design to make the site very appealing and fully functional.",
+        description: "All your news, all in one page—instantly! Stay up-to-date with a sleek, smooth experience you can flip from light to dark mode. Fast, easy, and stylish—get the latest news in a flash with Instanews!",
         language: "React, API",
         imageUrl: instanews,
         liveUrl: "https://instanews.vercel.app",
         githubUrl: "https://github.com/elnatan3/Instanews"
-
-    },
-    {
-        title: "Musipedia",
-        description: "Musipedia is a comprehensive music library website offering easy access to songs, artists, albums, and playlists. It features intuitive search and filtering, along with robust security for user accounts and personalized playlists. The site enhances user engagement with diverse music genres, interactive functionalities, and efficient management of music collections.",
-        language: "Python, Flask, HTML, CSS, JavaScript, SQL",
-        imageUrl: musipedia,
-        liveUrl: "https://musipedia.replit.app",
-        githubUrl: "https://github.com/elnatan3/Musipedia"
 
     },
     {
@@ -54,29 +54,6 @@ const projectsData = [
 
     },
     
-    {
-        title: "3D board Creator",
-        description: "This project is a Java-based application designed for creating 3D game boards and terrains. The app was created with my team through agile methodology and GitHub integration. The app is user-friendly and has features that allows for easy customization and design of game boards. It also offers a 3D preview feature which is compatible with 3D printers, allowing users to bring their digital creations into the physical world.",
-        language: "Java, JavaFx, Scenebuilder, Unit Testing, and Software Development",
-        imageUrl: threeDBoard,
-        liveUrl: "https://github.com/AugustanaCSC305Fall22/IbisRepo",
-        githubUrl: "https://github.com/AugustanaCSC305Fall22/IbisRepo"
-
-    },
-    {
-        title: "Emojiverse",
-        description: "EmojiVerse is a React app that translates sentences into expressive emojis, offering contextually relevant suggestions. It also provides emoji meanings and enriches messaging experiences. Elevate your conversations with EmojiVerse! Currently working to advance the site by using APIs.",
-        language: "React",
-        imageUrl: emoji,
-        liveUrl: "https://emoji-verse-ivory.vercel.app/",
-        githubUrl: "https://github.com/elnatan3/EmojiVerse"
-
-    },
-    
-    
-
-    
-  
 ];
 
 const Projects = () => {
