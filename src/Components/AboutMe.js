@@ -34,10 +34,10 @@ const AboutMe = () => {
             <div className="about-me-content" ref={aboutRef}>
                 <div className="frame-border">
                     <h2>About Me</h2>
-                    <p ref={el => textRefs.current[0] = el}>I'm a 22-year-old college student with a strong passion for computers and data analytics.</p>
-                    <p ref={el => textRefs.current[1] = el}>I love using my coding skills to solve real-world problems. I'm detail-oriented and enjoy breaking down complex issues to find clear, data-based solutions.</p>
-                    <p ref={el => textRefs.current[2] = el}>Whether leading a team or working with others, I always look for new ways to learn and grow in the fast-changing tech world.</p>
-                    <p ref={el => textRefs.current[3] = el}>My focus on improving both personally and professionally makes me a great fit for any tech role that values creativity, strategic thinking, and adaptability.</p>
+                    <p ref={el => textRefs.current[0] = el}>What’s up! I’m a 22-year-old tech enthusiast and data analytics whiz, living in the digital matrix and loving every byte of it. Computers? Data? That’s my jam.</p>
+                    <p ref={el => textRefs.current[1] = el}>With code as my toolkit, I'm here to turn real-world problems into neatly packaged solutions (with a dash of flair, of course). Breaking down gnarly issues and building data-fueled fixes? Count me in!</p>
+                    <p ref={el => textRefs.current[2] = el}>Whether I’m the captain of the code or part of the squad, I’m all about soaking up knowledge and leveling up in the ever-evolving tech realm.</p>
+                    <p ref={el => textRefs.current[3] = el}>Driven by a mission to be the ultimate tech chameleon—creative, strategic, and flexible—I’m here to bring a fresh perspective to any team daring enough to embrace the future. Let’s make some digital magic happen!</p>
                     <div className="cv-section">
                         <a href="https://drive.google.com/file/d/1yjJ6v3WIbIXQOgCE_-n09emX84Be-LGJ/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="download-cv">
                             <div className="cv">Download CV</div>

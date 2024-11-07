@@ -60,7 +60,7 @@ const Home = () => {
                 <img className="home-image" src={pic2} alt="Elnatan Tesfa" />
                 <div className="home-text">
                     <h1>Hi there! I am Elnatan Tesfa</h1>
-                    <p>A highly dedicated senior college student and a full-stack web developer.</p>
+                    <p>A highly dedicated data-driven Software Engineer and a full-stack developer.</p>
                 </div>
             </div>
         </div>
