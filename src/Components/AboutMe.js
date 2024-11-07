@@ -39,7 +39,7 @@ const AboutMe = () => {
                     <p ref={el => textRefs.current[2] = el}>Whether I’m the captain of the code or part of the squad, I’m all about soaking up knowledge and leveling up in the ever-evolving tech realm.</p>
                     <p ref={el => textRefs.current[3] = el}>Driven by a mission to be the ultimate tech chameleon—creative, strategic, and flexible—I’m here to bring a fresh perspective to any team daring enough to embrace the future. Let’s make some digital magic happen!</p>
                     <div className="cv-section">
-                        <a href="https://drive.google.com/file/d/1yjJ6v3WIbIXQOgCE_-n09emX84Be-LGJ/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="download-cv">
+                        <a href="https://drive.google.com/file/d/1vVIiD5uj5PCUsYKZvfuqJyUjU8YhjPPO/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="download-cv">
                             <div className="cv">Download CV</div>
                         </a>
                     </div>
