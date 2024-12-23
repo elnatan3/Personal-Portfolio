@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import * as THREE from 'three';
-import pic2 from './Images/pic2.png';
+import pic2 from './Images/profile.JPG';
 import './Styles/Home.css';
 
 const Home = () => {
